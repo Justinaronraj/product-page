@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+    }
+    body::before{
+        content:"";
+        width:100%;
+        height:100%;
+        position: fixed;
+        background-image: url(/image/shopping-mall-7340181_640.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        filter: blur(10px);
+        z-index: -1;
+    }
+    header{
+        text-align: center;
+        color: aliceblue;
+        letter-spacing: 10px;
+        font-size: 40px;
+        font-weight: bolder;
+        background-color: rgba(47, 47, 44, 0.97);
+    }
+    .product1{
+        display: flex;
+        margin-top: 30px;
+       padding-left: 150px;
+    }
+    .product2{
+        display: flex;
+        padding-left: 150px;
+    }
+    .p1{
+        background-color: rgba(110, 108, 108, 0.264);
+        border: 3px solid black;
+        border-radius: 20px;
+        width: 40%;
+        margin-left: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .pic1{
+        width: 300px;
+        border-radius: 20px;
+        padding: 40px 20px 10px 100px;
+    }
+    .pic2{
+        width: 330px;
+        height: 220px;
+        padding: 50px 20px 10px 80px;
+    }
+    .n1{
+        color: white;
+        text-align: center;
+        font-size: 40px;
+    }
+    .r1{
+        color: rgb(158, 157, 236);
+        text-align: center;
+        font-size: 35px;
+    }
+    .p1:hover{
+        box-shadow: 20px 20px 20px;
+    }
+</style>
+<body>
+    <header>E-Commerce</header>
+    <div class="product1">
+        <div class="p1">
+            <img class="pic1"src="/image/shoes-1433925_640.jpg" alt="">
+            <p class="n1">Puma</p>
+            <p class="r1">$2999</p>
+        </div>
+        <div class="p1">
+            <img class="pic2" src="/image/shoes-3693408_640.jpg" alt="">
+            <p class="n1">canvas</p>
+            <p class="r1">$2999</p>
+        </div>
+        </div>
+        <div class="product2">
+        <div class="p1">
+            <img class="pic1" src="/image/shoes-584850_640.jpg" alt="">
+            <p class="n1">woodland</p>
+            <p class="r1">$2999</p>
+        </div>
+        <div class="p1">
+            <img class="pic1" src="/image/running-shoes-115149_640.jpg" alt="">
+            <p class="n1">sport shoe</p>
+            <p class="r1">$2999</p>
+        </div>
+    </div>
+</body>
+</html>
